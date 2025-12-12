@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About me</title>
+  <meta name="description" content="About page for Aida — background, qualifications, and activities." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" role="banner">
+    <a class="brand" href="index.html" aria-label="Homepage">
+      <div class="logo" aria-hidden="true">YN</div>
+      <div class="brand-text">
+        <div class="name">Aida</div>
+        <div class="tagline">Designer • Developer • Creator</div>
+      </div>
+    </a>
+
+    <nav role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="about-hero" aria-labelledby="about-heading">
+      <h1 id="about-heading">About Me</h1>
+
+      <article class="about-content">
+        <h2>Background</h2>
+        <p>
+          I’m Aida, a student studying Information Systems. I’m learning web development and building
+  my skills in HTML, CSS, and JavaScript. I enjoy creating small websites and exploring new technologies.
+        </p>
+
+        <h2>Qualifications</h2>
+        <p>
+          I am currently studying at ADA University and have completed coursework in
+  programming, information systems, and technology fundamentals. I am practicing coding by building
+  personal projects and following tutorials online.
+        </p>
+
+        <h2>Activities</h2>
+        <p>
+          Outside of class, I enjoy learning about new web technologies, exploring AI tools for coding,
+  and experimenting with small personal projects. I also like reading about technology, watching
+  coding tutorials, and improving my problem-solving skills.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <p>
+      <a href="https://github.com/starr-5" target="_blank" rel="noopener noreferrer">GitHub — starr-5</a>
+      &nbsp;•&nbsp; © <span id="year"></span> Your Name
+    </p>
+  </footer>
+
+  <script>
+    // Set current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

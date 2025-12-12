@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aida — Portfolio</title>
+  <meta name="description" content="Personal portfolio homepage for Aida" />
+
+<link rel="stylesheet" href="style.css">
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#60a5fa;
+      --muted:#9ca3af;
+      --text:#e6eef8;
+      --radius:12px;
+      --max-width:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071025 0%, #07132a 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      justify-content:center;
+      padding:32px;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+    }
+
+    /* Navbar */
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:var(--text);
+    }
+    .brand .logo{
+      width:44px;
+      height:44px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#7dd3fc55);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#022;
+      font-weight:700;
+      box-shadow:0 4px 18px rgba(0,0,0,.45);
+    }
+    nav ul{
+      display:flex;
+      gap:16px;
+      list-style:none;
+      margin:0;
+      padding:0;
+      align-items:center;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      font-weight:600;
+    }
+    nav a:hover{color:var(--text)}
+
+    /* Hero */
+    .hero{
+      background:rgba(255,255,255,0.02);
+      border-radius:var(--radius);
+      padding:32px;
+      display:flex;
+      gap:28px;
+      align-items:center;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    .avatar{
+      width:160px;
+      height:160px;
+      border-radius:20px;
+      background:linear-gradient(180deg,#0b2540 0%, #0b3a5a 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--muted);
+      flex-shrink:0;
+      overflow:hidden;
+      position:relative;
+    }
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .avatar .placeholder{
+      font-size:14px;
+      text-align:center;
+      padding:12px;
+    }
+
+    .intro{
+      flex:1;
+    }
+    .intro h1{
+      margin:0 0 8px 0;
+      font-size:28px;
+      letter-spacing:-0.5px;
+    }
+    .intro p{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:70ch;
+    }
+    .cta{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .btn{
+      background:var(--accent);
+      color:#022;
+      border:none;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:700;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn.secondary{
+      background:transparent;
+      color:var(--muted);
+      border:1px solid rgba(255,255,255,0.04);
+      font-weight:600;
+    }
+
+    /* Footer */
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      text-align:center;
+      font-size:13px;
+    }
+
+    /* Responsive */
+    @media (max-width:800px){
+      .hero{flex-direction:column; align-items:flex-start}
+      .avatar{width:120px;height:120px;border-radius:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="nav" role="banner">
+      <a class="brand" href="#" aria-label="Homepage">
+        <div class="logo">AB</div>
+        <div>
+          <div style="font-weight:700">Aida</div>
+          <div style="font-size:12px;color:var(--muted)">Student • Web Developer • Learner</div>
+        </div>
+      </a>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="intro-heading">
+        <div class="avatar" aria-hidden="true">
+          <!-- Replace this placeholder with your profile image:
+               <img src="images/profile.jpg" alt="Your Name"> -->
+          <img src="myphoto.jpeg" alt= "Aida">
+        </div>
+
+        <div class="intro">
+          <h1 id="intro-heading">Hi — I'm Aida.</h1>
+          <p>
+            I’m Aida Baghirzade, a student studying Computer Science. I’m learning web development and practicing HTML, CSS, and JavaScript. 
+I enjoy creating small websites and exploring new coding tools while improving my programming skills.
+
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional sections: About, Projects, Contact (placeholders below) -->
+      <section id="about" style="margin-top:28px;background:transparent;padding:22px;border-radius:12px;color:var(--muted)">
+        <h2 style="margin:0 0 10px 0">About</h2>
+        <p> <section id="about" style="margin-top:28px;background:transparent;padding:22px;border-radius:12px;color:var(--muted)">
+  <h2>About</h2>
+  <p>
+    Hi, I’m Aida, a student studying Computer Science. I’m learning web development and practicing HTML, CSS, and JavaScript. 
+    I enjoy creating small websites, exploring new coding tools, and improving my programming skills. 
+    I’m also curious about UI/UX design and how to make websites accessible and user-friendly.
+  </p>
+</section>
+</p>
+      </section>
+
+      <section id="projects" style="margin-top:18px;background:transparent;padding:22px;border-radius:12px;color:var(--muted)">
+        <h2 style="margin:0 0 10px 0">Projects</h2>
+        <p>Project 1: As a group 84, we builded AND, OR, NOT, additionally, 
+          collaborated with other teams to build XOR, NAND logic gates. The link of our video is below.
+        <a href=https://youtu.be/Z4s4WlxwelQ?si=kSpEaBX7T6FhKVjo>https://youtu.be/Z4s4WlxwelQ?si=kSpEaBX7T6FhKVjo</a></p>
+        <p>Project 2: Me and my teammates went to a school far from the city, 
+          where the students were not very familiar with technology. 
+          We taught the students how to create algorithms, and in the end, to make them happy,
+          we gave them certificates.
+          You can watch the video. </p>
+        <p>Project 3: It was my first time in creating a website using html, css, 
+          and so on all together. It was very good and interesting experience.</p>
+      </section>
+
+      <section id="contact" style="margin-top:18px;background:transparent;padding:22px;border-radius:12px;color:var(--muted)">
+        <h2 style="margin:0 0 10px 0">Contact</h2>
+        <p>Email: studying12567@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/starr-5">https://github.com/starr-5</a></p>
+
+      </section>
+    </main>
+
+    <footer>
+      © <span id="current-year"></span> Aida — Built with care.
+    </footer>
+    <script>
+     document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+  </div>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
