@@ -7,11 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+</header>
+
 
   <div class="projects">
     <h1>My Projects</h1>
@@ -25,7 +31,14 @@
   </div>
 
   <footer>
-    <p>My Portfolio | <a href="https://github.com/starr-5">GitHub</a></p>
-  </footer>
+  <p>
+    © <span id="year"></span> Aida • 
+    <a href="https://github.com/starr-5" target="_blank">GitHub</a> •  
+    <a href="https://github.com/starr-5/newwebsite" target="_blank">Repo</a>
+  </p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

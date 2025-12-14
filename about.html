@@ -19,13 +19,17 @@
       </div>
     </a>
 
-    <nav role="navigation" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html" aria-current="page">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
+    <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
   </header>
 
   <main id="main" class="container" role="main">
@@ -56,12 +60,18 @@
     </section>
   </main>
 
-  <footer role="contentinfo" class="site-footer">
-    <p>
-      <a href="https://github.com/starr-5" target="_blank" rel="noopener noreferrer">GitHub — starr-5</a>
-      &nbsp;•&nbsp; © <span id="year"></span> Your Name
-    </p>
-  </footer>
+  <footer>
+  <p>
+    © <span id="year"></span> Aida • 
+    <a href="https://github.com/starr-5" target="_blank">GitHub</a> •  
+    <a href="https://github.com/starr-5/newwebsite" target="_blank">Repo</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
   <script>
     // Set current year in the footer
