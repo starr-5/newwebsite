@@ -72,3 +72,26 @@ footer a {
   color: white;
   margin: 0 8px;
 }
+/* Mobil üçün dizayn */
+@media (max-width: 800px) {
+  /* Hero və intro bölməsini tam genişlik et */
+  .hero, .intro {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Şəkilləri ekran genişliyinə uyğun et */
+  .avatar, .project-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Navbar linkləri alt-alta yerləşsin */
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
