@@ -110,3 +110,24 @@ footer a {
   color: #333;
 }
 
+/* FIX for About & Projects pages */
+
+body {
+  background-color: #1f1f1f;
+  color: #eaeaea;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+main, .projects {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.project-image {
+  display: block;
+  margin: 20px auto;
+}
