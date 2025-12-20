@@ -95,3 +95,18 @@ footer a {
     align-items: center;
   }
 }
+
+footer {
+  display: block;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
