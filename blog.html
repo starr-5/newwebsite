@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container">
+    <h1>My Blog</h1>
+
+    <article>
+      <h2>Learning Spanish</h2>
+      <p>I started learning Spanish this year. My goal is to reach A1 level by the end of 2026. Excited to practice speaking and reading every week!</p>
+    </article>
+
+    <article>
+      <h2>Summer Guitar Course</h2>
+      <p>This summer I am planning to attend a guitar course. I hope to improve my skills and maybe even play a few songs for fun!</p>
+    </article>
+
+    <article>
+      <h2>Web Development Updates</h2>
+      <p>Continuing to build my web development skills by creating small projects with HTML, CSS, and JavaScript. Learning a lot and enjoying the process!</p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Aida</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
